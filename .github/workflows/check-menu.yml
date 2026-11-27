@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - name: Check expected price text
+      - name: Check expected burger price text
         run: grep -F 'data-price="170"' index.html
+      - name: Check expected juice price text
+        run: grep -F 'data-price="120"' index.html
